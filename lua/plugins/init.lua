@@ -11,6 +11,14 @@ if fn.empty(fn.glob(install_path)) > 0 then
     execute 'packadd packer.nvim'
 end
 
+if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({
+        'git', 'clone', 'https://github.com/wbthomason/packer.nvim',
+        install_path
+    })
+    execute 'packadd packer.nvim'
+end
+
 -- Autocompile
 vim.cmd 'autocmd BufWritePost init.lua PackerCompile'
 
