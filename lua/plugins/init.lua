@@ -52,6 +52,9 @@ return require('packer').startup(function(use)
     -- use 'victorhqc/tree-sitter-prisma'
     use 'jparise/vim-graphql'
 
+    -- Git manager
+    use 'tpope/vim-fugitive'
+
     -- jira
-    use 'n0v1c3/vira'
+    use {'n0v1c3/vira', branch='VIRA-213'}
 end)
