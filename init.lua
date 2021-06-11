@@ -1,4 +1,5 @@
 -- GENERAL
+--
 require('vim-settings')
 require('keymap')
 require('colors')
