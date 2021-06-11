@@ -1,4 +1,4 @@
-local on_atach = function(client)
+local on_attach = function(client)
     if client.resolved_capabilities.document_formatting then
         vim.cmd [[augroup Format]]
         vim.cmd [[autocmd! * <buffer>]]
@@ -9,7 +9,7 @@ end
 local prettier = {formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true}
 require'lspconfig'.efm.setup{
     init_options = {documentFormatting = true, codeAction = false},
-    on_atach = on_atach,
+    on_attach = on_attach,
     filetypes = {"javascriptreact", "javascript", "typescript","typescriptreact", "html", "css", "json", "graphql"},
     settings = {
         rootMarkers = {".git/"},
@@ -24,7 +24,7 @@ require'lspconfig'.efm.setup{
             html = {prettier},
             css = {prettier},
             json = {prettier},
-            graphql = {prettier}
+            graphql = {prettier},
             -- yaml = {prettier},
             -- markdown = {markdownPandocFormat}
             -- javascriptreact = {prettier, eslint},

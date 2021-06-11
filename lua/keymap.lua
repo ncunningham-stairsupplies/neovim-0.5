@@ -34,6 +34,8 @@ map('n', '<Leader>k',
 map('n', 'gc', [[<cmd>CommentToggle<CR>]], {noremap=true; silent=true})
 map('v', 'gc', [[<cmd>CommentToggle<CR>]], {noremap=true; silent=true})
 
+-- Rest-nvim
+map('n', '<leader>p', '<cmd>lua require(\'rest-nvim\').run()<CR>',{noremap=true; silent=true})
 
 -- NVIM_COMPE
 vim.api.nvim_exec(
@@ -63,3 +65,7 @@ vim.api.nvim_set_keymap("n", "gR", "<cmd>Trouble lsp_references<cr>",
 )
 
 vim.api.nvim_command("command! LspFormatting :lua vim.lsp.buf.formatting()")
+
+vim.api.nvim_set_keymap("n", "<leader>ft", "<cmd>NvimTreeToggle<cr>", 
+    {silent = true, noremap = true}
+)

@@ -25,7 +25,10 @@ vim.cmd 'autocmd BufWritePost init.lua PackerCompile'
 return require('packer').startup(function(use)
     -- Package Manager
     use 'wbthomason/packer.nvim'
-
+    use {
+        'neoclide/coc.nvim',
+        branch='release'
+    }
     -- LSP
     use 'neovim/nvim-lspconfig'
     use 'glepnir/lspsaga.nvim'
@@ -50,6 +53,7 @@ return require('packer').startup(function(use)
     use 'folke/which-key.nvim'
     use 'windwp/nvim-autopairs'
     use 'terrortylor/nvim-comment'
+    use 'kyazdani42/nvim-tree.lua'
 
     --Themeing
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -60,6 +64,10 @@ return require('packer').startup(function(use)
     -- use 'victorhqc/tree-sitter-prisma'
     use 'jparise/vim-graphql'
 
+    -- Git manager
+    use 'tpope/vim-fugitive'
+
     -- jira
-    use 'n0v1c3/vira'
+    use {'n0v1c3/vira', branch='VIRA-213'}
+    use 'NTBBloodbath/rest.nvim'
 end)

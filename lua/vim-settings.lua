@@ -43,3 +43,6 @@ vim.o.clipboard = "unnamedplus" -- copy paste between vim and everything else
 vim.wo.signcolumn = "no"
 
 vim.o.guifont = 'Hack Nerd Font:h17'
+
+vim.g.vira_config_file_servers = os.getenv("HOME") .. "/.config/vira/vira_servers.json"
+vim.g.vira_config_file_projects = os.getenv("HOME") .. "/.config/vira/vira_projects.json"
