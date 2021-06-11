@@ -1,6 +1,6 @@
 require('lsp.tsserver')
 require('lsp.efm')
-require('lsp.prisma')
+-- require('lsp.prisma')
 require('lsp.graphql')
 require('lsp.gopls')
 -- require('lsp.denols')
