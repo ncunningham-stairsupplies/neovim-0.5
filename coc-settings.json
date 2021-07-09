@@ -1,4 +1,5 @@
 {
+    "prisma.prismaFmtBinPath": "",
     "prettier.tabWidth": 4,
     "eslint.filetypes": [
         "javascript",
@@ -16,5 +17,5 @@
         "svelte",
         "yaml"
     ],
-    "tsserver.formatOnType": false,
+    "tsserver.formatOnType": false
 }

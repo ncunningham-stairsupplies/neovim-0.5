@@ -53,6 +53,8 @@ endif
 " You will have bad experience for diagnostic messages when it's default 4000.
 set updatetime=300
 
+" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocAction('format')
 
 " mapping for snippets
 " Use <C-l> for trigger snippet expand.

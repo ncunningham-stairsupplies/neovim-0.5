@@ -69,3 +69,6 @@ vim.api.nvim_command("command! LspFormatting :lua vim.lsp.buf.formatting()")
 vim.api.nvim_set_keymap("n", "<leader>ft", "<cmd>NvimTreeToggle<cr>", 
     {silent = true, noremap = true}
 )
+vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>NvimTreeFindFile<cr>", 
+    {silent = true, noremap = true}
+)

@@ -57,17 +57,23 @@ return require('packer').startup(function(use)
 
     --Themeing
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use 'projekt0n/github-nvim-theme'
     use 'rakr/vim-two-firewatch'
     use 'folke/tokyonight.nvim'
     use 'tomasiser/vim-code-dark'
     use 'pantharshit00/vim-prisma'
     -- use 'victorhqc/tree-sitter-prisma'
     use 'jparise/vim-graphql'
+    use 'vim-pandoc/vim-pandoc'
+    use 'vim-pandoc/vim-pandoc-syntax'
 
     -- Git manager
     use 'tpope/vim-fugitive'
 
     -- jira
-    use {'n0v1c3/vira', branch='VIRA-213'}
+    use 'n0v1c3/vira'
     use 'NTBBloodbath/rest.nvim'
+
+    use "oberblastmeister/neuron.nvim"
+
 end)

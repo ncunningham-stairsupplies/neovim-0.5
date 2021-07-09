@@ -7,7 +7,7 @@ vim.o.showtabline = 2 -- always show buffer tabs
 vim.o.hidden = true -- Allow multiple buffers to be open
 vim.wo.wrap = false -- dont wrap line
 vim.wo.number = true -- show line numbers
-vim.wo.relativenumber = true -- relative line numbers instead of absolute
+vim.wo.relativenumber = false-- relative line numbers instead of absolute
 vim.o.cursorline = true -- highlight current line
 
 vim.o.splitbelow = true -- Hsplit below
@@ -42,7 +42,7 @@ vim.o.timeoutlen = 400 -- faster timeoutlen
 vim.o.clipboard = "unnamedplus" -- copy paste between vim and everything else
 vim.wo.signcolumn = "no"
 
-vim.o.guifont = 'Hack Nerd Font:h17'
+vim.o.guifont = 'Fira Code:h17'
 
 vim.g.vira_config_file_servers = os.getenv("HOME") .. "/.config/vira/vira_servers.json"
 vim.g.vira_config_file_projects = os.getenv("HOME") .. "/.config/vira/vira_projects.json"
