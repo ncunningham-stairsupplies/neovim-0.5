@@ -24,8 +24,8 @@ vim.o.backup = false
 vim.o.undodir = os.getenv("HOME") .. "/.cache/nvim/undodir/"
 vim.o.undofile = true
 
-vim.cmd('set ts=' .. 4)
-vim.cmd('set sw=' .. 4)
+vim.cmd('set ts=4')
+vim.cmd('set sw=4')
 vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.autoindent = true

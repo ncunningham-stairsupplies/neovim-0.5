@@ -75,5 +75,6 @@ return require('packer').startup(function(use)
     use 'NTBBloodbath/rest.nvim'
 
     use "oberblastmeister/neuron.nvim"
+    use 'mustache/vim-mustache-handlebars'
 
 end)

@@ -72,3 +72,17 @@ vim.api.nvim_set_keymap("n", "<leader>ft", "<cmd>NvimTreeToggle<cr>",
 vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>NvimTreeFindFile<cr>", 
     {silent = true, noremap = true}
 )
+vim.api.nvim_set_keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", 
+    {silent = true, noremap = true}
+)
+
+-- git stuff
+vim.api.nvim_set_keymap("n", "<leader>gh", ":diffget //3<CR>", 
+    {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>gu", ":diffget //2<CR>", 
+    {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>gs", ":G <CR>", 
+    {silent = true, noremap = true}
+)

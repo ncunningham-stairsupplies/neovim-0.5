@@ -9,7 +9,7 @@ function NvimTreeXdgOpen()
     end
 end
 
-vim.g.nvim_tree_width = 40
+vim.g.nvim_tree_width = 50
 vim.g.nvim_tree_update_cwd=1
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
 vim.g.nvim_tree_bindings = {
@@ -31,8 +31,8 @@ vim.g.nvim_tree_bindings = {
     ["R"] = tree_cb("refresh"),
     ["a"] = tree_cb("create"),
     ["d"] = tree_cb("remove"),
-    ["r"] = tree_cb("full_rename"),
-    ["<C-r>"] = tree_cb("rename"),
+    ["r"] = tree_cb("rename"),
+    ["<C-r>"] = tree_cb("full_rename"),
     ["x"] = tree_cb("cut"),
     ["c"] = tree_cb("copy"),
     ["p"] = tree_cb("paste"),
