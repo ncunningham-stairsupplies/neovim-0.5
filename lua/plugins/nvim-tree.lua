@@ -11,6 +11,7 @@ end
 
 vim.g.nvim_tree_width = 50
 vim.g.nvim_tree_update_cwd=1
+vim.g.nvim_tree_indent_markers=1
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
 vim.g.nvim_tree_bindings = {
     ["o"] = ":lua NvimTreeXdgOpen()<CR>",
