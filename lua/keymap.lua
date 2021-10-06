@@ -30,9 +30,6 @@ map('n', '<Leader>k',
     '<cmd>lua require(\'lspsaga.diagnostic\').show_line_diagnostics()<CR>',
     {noremap = true, silent = true})
 
--- NVIM-COMMENT
-map('n', 'gc', [[<cmd>CommentToggle<CR>]], {noremap=true; silent=true})
-map('v', 'gc', [[<cmd>CommentToggle<CR>]], {noremap=true; silent=true})
 
 -- Rest-nvim
 map('n', '<leader>p', '<cmd>lua require(\'rest-nvim\').run()<CR>',{noremap=true; silent=true})

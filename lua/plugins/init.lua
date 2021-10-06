@@ -52,8 +52,9 @@ return require('packer').startup(function(use)
     --General
     use 'folke/which-key.nvim'
     use 'windwp/nvim-autopairs'
-    use 'terrortylor/nvim-comment'
     use 'kyazdani42/nvim-tree.lua'
+    use 'b3nj5m1n/kommentary'
+    use 'p00f/nvim-ts-rainbow'
 
     --Themeing
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
