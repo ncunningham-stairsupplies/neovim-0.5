@@ -1,5 +1,5 @@
 require('github-theme').setup({
-    themeStyle = "dark",
-    functionStyle = "italic",
+    theme_style = "dark",
+    function_style = "italic",
     colors = { hint = "orange", error = "#ff0000"}
 })

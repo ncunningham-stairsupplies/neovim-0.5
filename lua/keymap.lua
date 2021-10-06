@@ -3,17 +3,9 @@ vim.g.mapleader = ' '
 
 map('n', '<Leader>f', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], {noremap=true; silent=true})
 
--- LSP
+-- LSP SAGA
 map('n', 'K', ':Lspsaga hover_doc<CR>', {noremap = true, silent = true})
-map('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>',
-    {noremap = true, silent = true})
-map('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>',
-    {noremap = true, silent = true})
-map('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>',
-    {noremap = true, silent = true})
-map('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>',
-    {noremap = true, silent = true})
--- map('n', 'ca', ':Lspsaga code_action<CR>', { noremap=true, silent=true }) -- in whichkey
+map('n', '<Leader>do', ':Lspsaga code_action<CR>', { noremap=true, silent=true }) -- in whichkey
 map('n', '<C-p>', ':Lspsaga diagnostic_jump_prev<CR>',
     {noremap = true, silent = true})
 map('n', '<C-n>', ':Lspsaga diagnostic_jump_next<CR>',
@@ -31,8 +23,6 @@ map('n', '<Leader>k',
     {noremap = true, silent = true})
 
 
--- Rest-nvim
-map('n', '<leader>p', '<cmd>lua require(\'rest-nvim\').run()<CR>',{noremap=true; silent=true})
 
 -- NVIM_COMPE
 vim.api.nvim_exec(

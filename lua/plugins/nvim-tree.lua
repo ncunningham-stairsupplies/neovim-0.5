@@ -1,19 +1,5 @@
-vim.cmd('let g:nvim_tree_quit_on_open = 1')
-
-function NvimTreeXdgOpen()
-    local lib = require 'nvim-tree.lib'
-    local node = lib.get_node_at_cursor()
-    if node then
-        vim.fn.jobstart("xdg-open '" .. node.absolute_path .. "' &",
-                        {detach = true})
-    end
-end
-
-vim.g.nvim_tree_width = 50
-vim.g.nvim_tree_update_cwd=1
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
-vim.g.nvim_tree_bindings = {
-    {key = {"o"}, cb = tree_cb(":lua NvimTreeXdgOpen()<CR>") },
+local list = {
     {key = {"<CR>"}, cb = tree_cb("edit")},
     {key = {"<2-LeftMouse>"}, cb = tree_cb("edit")},
     {key = {"<2-RightMouse>"}, cb = tree_cb("cd")},
@@ -40,4 +26,16 @@ vim.g.nvim_tree_bindings = {
     {key = {"]c"}, cb = tree_cb("next_git_item")},
     {key = {"-"}, cb = tree_cb("dir_up")},
     {key = {"q"}, cb = tree_cb("close")},
+}
+
+require'nvim-tree'.setup {
+    update_cwd = true,
+    view = {
+        width = 40,
+        mappings = {
+            custom_only = false,
+            list = list
+        }
+    } 
+
 }

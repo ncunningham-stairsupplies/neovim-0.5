@@ -11,12 +11,3 @@ local function augroups(definitions)
         api.nvim_command('augroup END')
     end
 end
-
-augroups({
-    _prisma = {
-        {
-            'FileType', 'prisma',
-            'syntax sync fromstart'
-        },
-    },
-})

@@ -25,22 +25,15 @@ vim.cmd 'autocmd BufWritePost init.lua PackerCompile'
 return require('packer').startup(function(use)
     -- Package Manager
     use 'wbthomason/packer.nvim'
-    use {
-        'neoclide/coc.nvim',
-        branch='release'
-    }
+
     -- LSP
     use 'neovim/nvim-lspconfig'
-    use 'glepnir/lspsaga.nvim'
+    use 'tami5/lspsaga.nvim'
     use 'kabouzeid/nvim-lspinstall'
     use 'hrsh7th/nvim-compe'
     use {
       "folke/trouble.nvim",
       requires = "kyazdani42/nvim-web-devicons",
-      config = function()
-        require("trouble").setup {
-        }
-      end
     }
     use 'jose-elias-alvarez/nvim-lsp-ts-utils'
 
@@ -55,6 +48,7 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-tree.lua'
     use 'b3nj5m1n/kommentary'
     use 'p00f/nvim-ts-rainbow'
+    use 'folke/lsp-colors.nvim'
 
     --Themeing
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -62,19 +56,9 @@ return require('packer').startup(function(use)
     use 'rakr/vim-two-firewatch'
     use 'folke/tokyonight.nvim'
     use 'tomasiser/vim-code-dark'
-    use 'pantharshit00/vim-prisma'
-    -- use 'victorhqc/tree-sitter-prisma'
     use 'jparise/vim-graphql'
-    use 'vim-pandoc/vim-pandoc'
-    use 'vim-pandoc/vim-pandoc-syntax'
 
     -- Git manager
     use 'tpope/vim-fugitive'
-
-    -- jira
-    use 'n0v1c3/vira'
-    use 'NTBBloodbath/rest.nvim'
-
-    use 'mustache/vim-mustache-handlebars'
 
 end)
