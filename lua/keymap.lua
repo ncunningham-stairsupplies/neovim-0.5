@@ -53,6 +53,8 @@ vim.api.nvim_set_keymap("n", "gR", "<cmd>Trouble lsp_references<cr>",
 
 vim.api.nvim_command("command! LspFormatting :lua vim.lsp.buf.formatting()")
 
+vim.api.nvim_set_keymap('n', '<leader>p', "<cmd>LspFormatting<CR>",{silent = true, noremap = true})
+
 vim.api.nvim_set_keymap("n", "<leader>ft", "<cmd>NvimTreeToggle<cr>", 
     {silent = true, noremap = true}
 )

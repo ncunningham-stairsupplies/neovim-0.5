@@ -27,15 +27,17 @@ local list = {
     {key = {"-"}, cb = tree_cb("dir_up")},
     {key = {"q"}, cb = tree_cb("close")},
 }
-
+vim.g.nvim_tree_quit_on_open = 1
 require'nvim-tree'.setup {
     update_cwd = true,
+    auto_close = true,
     view = {
         width = 40,
         mappings = {
             custom_only = false,
             list = list
-        }
+        },
+        auto_resize=true
     } 
 
 }
