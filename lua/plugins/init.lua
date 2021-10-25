@@ -60,5 +60,8 @@ return require('packer').startup(function(use)
 
     -- Git manager
     use 'tpope/vim-fugitive'
+    --lua development
+    use 'tjdevries/nlua.nvim'
+    use 'euclidianAce/BetterLua.vim'
 
 end)

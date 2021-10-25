@@ -42,4 +42,6 @@ vim.o.timeoutlen = 400 -- faster timeoutlen
 vim.o.clipboard = "unnamedplus" -- copy paste between vim and everything else
 vim.wo.signcolumn = "no"
 
-vim.o.guifont = 'Fira Code:h17'
+vim.o.guifont = 'Fira Code'
+
+vim.api.nvim_command("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")

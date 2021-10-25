@@ -20,3 +20,4 @@ require('plugins/github-theme')
 require('plugins/lsp-colors')
 -- LSP
 require('lsp')
+
