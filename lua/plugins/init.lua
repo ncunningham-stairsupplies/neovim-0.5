@@ -30,6 +30,11 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
     use 'tami5/lspsaga.nvim'
     use 'kabouzeid/nvim-lspinstall'
+    -- completion
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/nvim-cmp'
+    -- deprecated
     use 'hrsh7th/nvim-compe'
     use {
       "folke/trouble.nvim",

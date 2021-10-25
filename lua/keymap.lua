@@ -24,12 +24,6 @@ map('n', '<Leader>k',
 
 
 
--- NVIM_COMPE
-vim.api.nvim_exec(
-    [[
-        inoremap <silent><expr> <C-Space> compe#complete()
-    ]],true
-)
 
 vim.api.nvim_set_keymap("n", "<leader>ji", "<cmd>Neojira<cr>",
   {silent = true, noremap = true}

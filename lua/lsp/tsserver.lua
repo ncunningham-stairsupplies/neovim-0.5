@@ -1,4 +1,5 @@
 local on_attach = require('lsp.on_attach')
+local capabilities = require('lsp.capabilities')
 
 -- npm install -g typescript typescript-language-server
 require'lspconfig'.tsserver.setup({
@@ -20,5 +21,5 @@ require'lspconfig'.tsserver.setup({
                     underline = true,
                     update_in_insert = true
                 })
-        }
+        },
 })
